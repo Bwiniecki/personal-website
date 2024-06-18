@@ -4,16 +4,55 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Brock Winiecki</title>
-        <link href="style.css" rel="stylesheet">
+        <link href="projects.css" rel="stylesheet">
     </head>
 
     <body>
         <div class="pages">
             <a href="index.html">Brock Winiecki</a>
             <a href="projects.html" style="background-color: rgb(175, 173, 173);" >Projects</a>
-            <a href="resume.html" style="margin-right: 200px;">Resume</a>
+            <a href="Resume_June2024.png" target="blank" style="margin-right: 200px;">Resume</a>
             <a href="https://www.linkedin.com/in/brock-winiecki/" target="_blank" style="margin-left: 200px;">Linkedin</a>
             <a href="contact.html">Contact Brock</a>
         </div>
+        <div>
+            <h2 style="text-align: center; font-size: xx-large">Project Library</h2>
+        </div>
+        <hr>
+        <div class="projectspage">
+            <div>
+                <h2 id="saurontext">Sauron Algorithm</h2>
+                <p id="saurontext">I started working on this project when I wanted to combine my interests of stock trading and coding. I was facinated with the idea that computers and algorithms
+                    could be used to find patterns within the stock market and was convinced that these patterns could be exploited to beat the house. The issue is, I honestly had 
+                    no idea where to start. This is actually how most of my projects go, but I do think this leads to a lot of learning in areas a person isn't familar in. So, like 
+                    most projects, I started by researching into the topic and how I could make an idea into a reality. The issue is, with quantitative finance, there are very limited 
+                    resources online compared to my previous projects. This led me to the r/quant and r/algotrading subredddits where I was trying to understand wth was going on. Being
+                    at best, moderaty helpful, I decided I needed more specific resources so I purchased The Man Who Solved the Market, which is a biography on the life of Jim Simmons, Who 
+                    was the founder of Ren tech, arguably the first quant firm. I thoroughly enjoyed it but it was surreal as Simons passed while I was reading it. However, the book 
+                    didn't really offer any specifics when it comes to creating new trategies or finding new singals. More of an general view. So one day when browsing reddit I saw a post 
+                    from a user on a mean reversion strategy. This excited me as it was the first time I had actually saw a specific strategy and it's results. So I decided to try to replicate
+                    this strategy and mess around with it to figure out how/why it works. when doing so I accidentaly back tested a different mean reversion strategy. Surprisingly, this 
+                    new strategy resulted in better annual returns but a lower sharpe. I was very happy with the innital results as it averaged 22.3% average annual returns for the past 
+                    40 years. I eventually got this strategy to peak at roughly 48.11% annual returns in the past decade in back testing after testing the strategy on 24 different securiteis then further adjusting the conditions. I know, severly overfitted, however, I was eager to implement 
+                    the strategy so I created a new file that gathers current data on a security, runs it through the algo, then talks to a broker to either buy or sell. it will then
+                    email me the daily results along with some other metrics. This process I entirely autmoated to run at a given time on a daily basis. I know it would be wiser to paper
+                    trade for a year, however, I am eager to test out the strategy with real money, along with the fact that there is very little risk in the strategy. On June 1st 2024 I innitaed the strategy with 
+                    $1000 and it's been trading live for the past 2 weeks, so far up 2.53%. However, I'm now very bored without a project as this is kind of working too well, so I have now started 
+                    planning my next project which I want to be very significant, being a lot more impressive of a strategy.
+                </p>
+                
+            </div>
+            <div>
+                <img src="imgs/sauronnoti.PNG" id="sauronnoti">
+            </div>
+            <div>
+                <img src="imgs/saurongraph.png" id="saurongraph">
+            </div>
+        </div>
+        <div class="sauronprojects">
+            <img src="imgs/sauronresults.png" class="sauronresults">
+            <img src="imgs/sauronyears.png" class="sauronresults">
+        </div>
+        <hr>
     </body>
 </html>

@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Navigator */
+
+.pages a {
+    align-items: center;
+    color:rgba(0, 0, 0, 0.793);
+    text-decoration: none;
+    padding: 20px;
+}
+
+.pages {
+    background-color: rgb(213, 208, 208);
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    width:fit-content;
+    margin: 50px auto;
+}
+
+.pages a:hover {
+    color:black;
+    background-color: rgb(175, 173, 173);
+}
+
+
+/* Projects Page */
+
+.projectspage {
+    margin: 40px 20px 20px 40px;
+    display: flex;
+    gap: 15px;
+    text-align: left;
+    align-items: center;
+
+}
+
+#saurontext {
+    width: 500px;
+    margin: 20px;
+}
+
+#saurongraph {
+    height: 500px;
+    margin: 20px;
+}
+
+#sauronnoti {
+    height: 700px;
+    margin: 40px auto;
+}
+
+.sauronprojects {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.sauronresults {
+    height: 500px;
+
+}
+
