@@ -25,41 +25,53 @@
             <a href="https://www.linkedin.com/in/brock-winiecki/" target="_blank" style="margin-left: 200px;">Linkedin</a>
             <a href="contact.html">Contact Brock</a>
         </div>
+
+        <!--End of navigation bar-->
         <div>
             <h2 style="text-align: center; font-size: xx-large">Project Library</h2>
         </div>
         <hr>
-        <div class="projectspage">
-            <div>
-                <h2 id="saurontext">Sauron Algorithm</h2>
-                <p id="saurontext">I started working on this project when I wanted to combine my interests in stock trading and coding. I was fascinated with the idea that computers and algorithms 
-                    could be used to find patterns within the stock market, and she was convinced that these patterns could be exploited to beat the house. The issue is, I honestly had I have no idea where to start. 
-                    This is actually how most of my projects go, but I do think this leads to a lot of learning in areas a person isn't familiar with. So, like For most projects, I started by researching the topic and how I could turn an idea into a reality. 
-                    The issue is that, with quantitative finance, there are very limited resources online compared to my previous projects. This led me to the r/quant and r/algotrading subreddits, where I was trying to understand what was going on. 
-                    Being at best, moderately helpful, I decided I needed more specific resources, so I purchased The Man Who Solved the Market, which is a biography on the life of Jim Simmons, who was the founder of Ren Tech, arguably the first quant firm. 
-                    I thoroughly enjoyed it, but it was surreal as Simons passed while I was reading it. However, the book didn't really offer any specifics when it comes to creating new strategies or finding new singals. More of a general view. 
-                    So one day, while browsing Reddit, I saw a post from a user on a mean reversion strategy. This excited me, as it was the first time I had actually seen a specific strategy and its results. So I decided to try to replicate this strategy and mess around with it to figure out how/why it works. 
-                    When doing so, I accidentally back-tested a different mean reversion strategy. Surprisingly, this new strategy resulted in better annual returns but a lower sharpe. I was very happy with the initial results, as it averaged 22.3% average annual returns for the past 40 years. 
-                    I eventually got this strategy to peak at roughly 48.11% annual returns in the past decade in back testing after testing the strategy on 24 different securiteis and then further adjusting the conditions. 
-                    I know I was severely overfit; however, I was eager to implement the strategy, so I created a new file that gathers current data on a security, runs it through the algorithm, then talks to a broker to either buy or sell. It will then email me the daily results along with some other metrics. 
-                    This process was entirely automated to run at a given time on a daily basis. I know it would be wiser on paper trade for a year; however, I am eager to test out the strategy with real money, along with the fact that there is very little risk in the strategy (it's only buying/selling an equity a few times a month). 
-                    On June 1st, 2024, I initiated the strategy with $1000, and it's been trading live for the past 2 weeks, so far up 2.53%. However, I'm now very bored without a project, as this is kind of working too well, so I have now started planning my next project, which I want to be very significant, being a lot more impressive of a strategy.
- 
-                </p>
-                <b>UPDATE: Exactly 1 month into running this strategy live and the portfolio has risen 4.05%</b>
-                
-            </div>
-            <div>
-                <img src="imgs/sauronnoti.PNG" id="sauronnoti">
-            </div>
-            <div>
-                <img src="imgs/saurongraph.png" id="saurongraph">
-            </div>
-        </div>
-        <div class="sauronprojects">
-            <img src="imgs/sauronresults.png" class="sauronresults">
-            <img src="imgs/sauronyears.png" class="sauronresults">
+
+        <!-- CORN CONNECT -->
+        <div class="wrapper">
+            <header class="header"><h2 id="saurontext">Corn Connect</h2></header>
+            <article class="main">
+              <p>Soooo where to start… Well when looking for new strategies, I remembered reading in The Man Who Solved The Market that they used pairs trading and to look for stocks which may have correlated 
+                movements. This led me to thinking of the scene in the movie The Social Network (one of my favorites) where a Harvard student made money trading gas futures by being able to predict 
+                the weather. So these two ideas led to thinking about the effect agricultural futures have on agricultural production stocks with the theory that maybe when agriculture prices are high, farmers 
+                have more money, and spend more money on farm equipment like tractors, combines, etc. This led me to look into a strategy involving the correlation between Soybean/Corn Futures (as they make 
+                roughly half of all crops grown in America) with farming equipment companies such as Deere. Continue to the footer to the jupyter notebook for a lot more detailed walkthrough of the strategy. 
+                In the end, I don’t think this strategy would work as soybean and corn futures are on the continual decline. But honestly, this project was a little too much data science for me and not enough coding, 
+                but now I’m fairly confident in my data science skills as in the past I’ve always used them here and there in various projects but this was the first project that was primarily data science. Welp, 
+                this project led me to buying Paul Wilmott’s book and quantitative finance as I believe I need to attack this problem with a larger mathematical approach. Stay tuned as I think that’ll be my next strategy. 
+                Maybe trying to implement some mathematical models when it comes to pricing biotech futures (a project I’ve been meaning to tackle). 08/13/2024</p>  
+            </article>
+            <aside class="aside aside-1"><img src="imgs/CornConnectGraph1.png" id="CornConnectGraph1"></aside>
+            <aside class="aside aside-2"><img src="imgs/CornConnectGraph2.png" id="CornConnectGraph2"></aside>
+            <footer class="footer"><a href="Pairs_Trading.html" target="_blank" id="CornConnectLink">Link to Jupyter Notebook</a></footer>
         </div>
         <hr>
+        <!-- SAURON ALGO -->
+        <div class="wrapper">
+            <header class="header"><h2 id="saurontext">Suaron Algorithm</h2></header>
+            <article class="main">
+              <p spellcheck="true"> I started working on this project when I wanted to combine my interests in stock trading and coding. I was fascinated with the idea that computers and algorithms 
+                could be used to find patterns within the stock market, and she was convinced that these patterns could be exploited to beat the house. The issue is, I honestly had I have no idea where to start. 
+                This is actually how most of my projects go, but I do think this leads to a lot of learning in areas a person isn't familiar with. So, like For most projects, I started by researching the topic and how I could turn an idea into a reality. 
+                The issue is that, with quantitative finance, there are very limited resources online compared to my previous projects. This led me to the r/quant and r/algotrading subreddits, where I was trying to understand what was going on. 
+                Being at best, moderately helpful, I decided I needed more specific resources, so I purchased The Man Who Solved the Market, which is a biography on the life of Jim Simmons, who was the founder of Ren Tech, arguably the first quant firm. 
+                I thoroughly enjoyed it, but it was surreal as Simons passed while I was reading it. However, the book didn't really offer any specifics when it comes to creating new strategies or finding new singals. More of a general view. 
+                So one day, while browsing Reddit, I saw a post from a user on a mean reversion strategy. This excited me, as it was the first time I had actually seen a specific strategy and its results. So I decided to try to replicate this strategy and mess around with it to figure out how/why it works. 
+                When doing so, I accidentally back-tested a different mean reversion strategy. Surprisingly, this new strategy resulted in better annual returns but a lower sharpe. I was very happy with the initial results, as it averaged 22.3% average annual returns for the past 40 years. 
+                I eventually got this strategy to peak at roughly 48.11% annual returns in the past decade in back testing after testing the strategy on 24 different securiteis and then further adjusting the conditions. 
+                I know I was severely overfit; however, I was eager to implement the strategy, so I created a new file that gathers current data on a security, runs it through the algorithm, then talks to a broker to either buy or sell. It will then email me the daily results along with some other metrics. 
+                This process was entirely automated to run at a given time on a daily basis. I know it would be wiser on paper trade for a year; however, I am eager to test out the strategy with real money, along with the fact that there is very little risk in the strategy (it's only buying/selling an equity a few times a month). 
+                On June 1st, 2024, I initiated the strategy with $1000, and it's been trading live for the past 2 weeks, so far up 2.53%. However, I'm now very bored without a project, as this is kind of working too well, so I have now started planning my next project, which I want to be very significant, being a lot more impressive of a strategy.</p>  
+            </article>
+            <aside class="aside aside-1"><img src="imgs/sauronnoti.PNG" id="sauronnoti"></aside>
+            <aside class="aside aside-2"><img src="imgs/saurongraph.png" id="saurongraph"></aside>
+            <footer class="footer"><img src="imgs/sauronresults.png" class="sauronresults"></footer>
+        </div>
+
     </body>
 </html>
