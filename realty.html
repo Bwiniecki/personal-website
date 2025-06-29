@@ -100,13 +100,29 @@ permalink: /realty/
                             </label>
                             <input type="range" id="vacancy" min="0" max="30" value="10" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
                         </div>
-                        <!-- Other Costs -->
-                         <div>
-                            <label for="other-costs" class="flex justify-between text-sm font-medium text-gray-700">
-                                <span class="slider-label">Taxes/Insurance</span>
-                                <span class="slider-value font-bold text-indigo-600"><span id="other-costs-value">10</span>%</span>
+                        <!-- Property Management -->
+                        <div>
+                            <label for="property-management" class="flex justify-between text-sm font-medium text-gray-700">
+                                <span class="slider-label">Property Mgmt</span>
+                                <span class="slider-value font-bold text-indigo-600"><span id="property-management-value">0</span>%</span>
                             </label>
-                            <input type="range" id="other-costs" min="0" max="30" value="10" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                            <input type="range" id="property-management" min="0" max="30" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                        </div>
+                        <!-- Taxes -->
+                         <div>
+                            <label for="taxes" class="flex justify-between text-sm font-medium text-gray-700">
+                                <span class="slider-label">Taxes</span>
+                                <span class="slider-value font-bold text-indigo-600"><span id="taxes-value">5</span>%</span>
+                            </label>
+                            <input type="range" id="taxes" min="0" max="30" value="5" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                        </div>
+                         <!-- Insurance -->
+                         <div>
+                            <label for="insurance" class="flex justify-between text-sm font-medium text-gray-700">
+                                <span class="slider-label">Insurance</span>
+                                <span class="slider-value font-bold text-indigo-600"><span id="insurance-value">5</span>%</span>
+                            </label>
+                            <input type="range" id="insurance" min="0" max="30" value="5" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
                         </div>
                          <!-- Closing Costs -->
                          <div>
@@ -171,7 +187,9 @@ permalink: /realty/
             { id: 'mortgage-length', valueId: 'mortgage-length-value' },
             { id: 'maintenance', valueId: 'maintenance-value' },
             { id: 'vacancy', valueId: 'vacancy-value' },
-            { id: 'other-costs', valueId: 'other-costs-value' },
+            { id: 'property-management', valueId: 'property-management-value' },
+            { id: 'taxes', valueId: 'taxes-value' },
+            { id: 'insurance', valueId: 'insurance-value' },
             { id: 'closing-costs', valueId: 'closing-costs-value' },
         ];
 
@@ -204,7 +222,9 @@ permalink: /realty/
                 mortgage_length: parseInt(document.getElementById('mortgage-length').value),
                 maintenance: parseFloat(document.getElementById('maintenance').value) / 100,
                 vacancy: parseFloat(document.getElementById('vacancy').value) / 100,
-                taxes_insurance: parseFloat(document.getElementById('other-costs').value) / 100,
+                property_management: parseFloat(document.getElementById('property-management').value) / 100,
+                taxes: parseFloat(document.getElementById('taxes').value) / 100,
+                insurance: parseFloat(document.getElementById('insurance').value) / 100,
                 closing_costs: parseFloat(document.getElementById('closing-costs').value) / 100
             };
 
@@ -321,7 +341,7 @@ permalink: /realty/
                 
                 // Cashflow Calculation
                 const monthlyIncome = rent;
-                const monthlyExpenses = monthlyIncome * (params.maintenance + params.vacancy + params.taxes_insurance);
+                const monthlyExpenses = monthlyIncome * (params.maintenance + params.vacancy + params.property_management + params.taxes + params.insurance);
                 const monthlyCashflow = monthlyIncome - monthlyPayment - monthlyExpenses;
                 const yearlyCashflow = monthlyCashflow * 12;
                 
@@ -440,3 +460,4 @@ permalink: /realty/
     </script>
 </body>
 </html>
+
